@@ -79,7 +79,7 @@ const UserGrid = () => {
             number: randomGenNumber,
         }).then(() => {
             // Delay state check to allow change stream to update winner
-            return new Promise(resolve => setTimeout(resolve, 100)); // wait 300ms
+            return new Promise(resolve => setTimeout(resolve, 1)); // 
         }).then(() => {
             return axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/game/state`);
         }).then((response) => {
