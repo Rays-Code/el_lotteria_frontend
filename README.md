@@ -1,12 +1,95 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+````markdown
+# 🎰 El Lotteria Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is the frontend for **El Lotteria** — a real-time, grid-based lottery-style game. Players compete on unique 3×3 number grids while random numbers are drawn, with live updates powered by MongoDB change streams.
 
-## Expanding the ESLint configuration
+🔗 **Live Demo**: [https://el-lotteria-frontend.vercel.app/](https://el-lotteria-frontend.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React.js** – Frontend library for building UI  
+- **Vite** – Fast development build tool  
+- **Axios** – For making HTTP requests  
+- **Tailwind CSS** – Utility-first CSS framework  
+- **MUI (Material UI)** – For UI components and responsiveness  
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/el-lotteria-frontend.git
+cd el-lotteria-frontend
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Set up environment variables
+
+Create a `.env` file in the root and add:
+
+```
+VITE_BACKEND_URL=http://localhost:3000/api/game
+```
+
+Make sure this matches your backend URL.
+
+### 4. Run the development server
+
+```bash
+npm run dev
+```
+
+Open your browser at [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 📁 Project Structure
+
+```
+el-lotteria-frontend/
+├── components/
+│   ├── ControlButtons.jsx
+│   └── GridInput.jsx
+├── pages/
+│   └── UserGrid.jsx
+├── utils/
+│   └── generateUniqueRandomNumbers.js
+├── App.jsx
+├── main.jsx
+├── index.css
+└── vite.config.js
+```
+
+---
+
+## 📸 Screenshot
+
+![El Lotteria UI](https://el-lotteria-frontend.vercel.app/screenshot.png)
+
+---
+
+## 📦 Production
+
+Deployed via **Vercel**
+🔗 [https://el-lotteria-frontend.vercel.app/](https://el-lotteria-frontend.vercel.app/)
+
+---
+
+## 🧠 Author
+
+**Dipraj** – [GitHub](https://github.com/your-username)
+
+```
+```
