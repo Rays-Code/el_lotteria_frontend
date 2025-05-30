@@ -108,12 +108,12 @@ const UserGrid = () => {
 
   return (
     <div className='flex flex-col gap-20 mt-10'>
-       <h1 className='font-bold text-7xl'>EL Lotteria 🎰</h1>
+       <h1 className='font-bold text-3xl'>EL Lotteria 🎰</h1>
 
-        <div className='flex gap-40'>
-        <div className='flex flex-col gap-20'>
+        <div className='flex gap-20'>
+        <div className='flex flex-col gap-10'>
         <div>
-            <h1 className='bold text-3xl mb-5'>User 1 Grid {winner=='User 1'? '(Winner🎉)': ''}</h1>
+            <h1 className='bold text-xl mb-5'>User 1 Grid {winner=='User 1'? '(Winner🎉)': ''}</h1>
             <div className='grid grid-cols-3 w-[250px] gap-4'>
             {user1Grid.map((val, idx) => {
                 const lastDrawn = numbersdrawn[numbersdrawn.length - 1];
@@ -126,7 +126,7 @@ const UserGrid = () => {
         </div>
 
         <div>
-            <h1 className='bold text-3xl mb-5'>User 2 Grid {winner=='User 2'? '(Winner🎉)': ''}</h1>
+            <h1 className='bold text-xl mb-5'>User 2 Grid {winner=='User 2'? '(Winner🎉)': ''}</h1>
             <div className='grid grid-cols-3 w-[250px] gap-4'>
             {user2Grid.map((val, idx) => {
                 const lastDrawn = numbersdrawn[numbersdrawn.length - 1];
@@ -141,7 +141,7 @@ const UserGrid = () => {
     <ControlButtons handleStart={handleStart} handleStop={handleStop}/>
 
     </div>
-    <div className='text-lg'>Made with ❤️ by Dipraj Ray</div>
+    <div className='text-base'>Made with ❤️ by Dipraj Ray</div>
     </div>
     
     
